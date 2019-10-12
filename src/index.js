@@ -3,7 +3,6 @@ module.exports = function zeros(expression) {
         i,
         summ2 = 0,
         summ5 = 0,
-        result = 0,
         factorialis = [],
         dublFactorialisNeChet = [],
         dublFactorialisChet = [];
@@ -60,7 +59,5 @@ module.exports = function zeros(expression) {
         }
     }
 
-    result = result + Math.min(summ5, summ2);
-
-    return result;
+    return Math.min(summ5, summ2);
 };
